@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import org.reko.rekofx.gui.DiagCellFactory?>
+<AnchorPane prefHeight="494.0" prefWidth="288.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.reko.rekofx.gui.MainController">
+    <children>
+        <ListView fx:id="listView" layoutX="13.0" layoutY="14.0" onMouseClicked="#onMouseClick" prefHeight="200.0" prefWidth="231.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <VBox layoutX="12.0" layoutY="219.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <StackPane>
+               <children>
+                  <Label fx:id="welcomeText" text="Label" />
+               </children>
+            </StackPane>
+            <StackPane>
+               <children>
+                  <ButtonBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                        <Button mnemonicParsing="false" onAction="#onListViewButtonClick" text="ListView" />
+                        <Button onAction="#onHelloButtonClick" text="Hello!" />
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+      <ListView fx:id="diagView" layoutX="14.0" layoutY="217.0" prefHeight="153.0" prefWidth="260.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+    </children>
+</AnchorPane>
